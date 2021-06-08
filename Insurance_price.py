@@ -181,6 +181,9 @@ rmse = np.sqrt(mse)
 print("coefficient of determination :", r2)
 print("mean squared error :", mse)
 print("root mean squared error :", rmse)
+Output:  coefficient of determination : 0.7979920708813732
+         mean squared error : 32145514.14941769
+         root mean squared error : 5669.701416249157
 
 
 # So, our model accuracy is 79.7%.
@@ -225,9 +228,19 @@ rfr_model1.score(x_test,y_test)
 
 
 rfr_model1.score(x_train,y_train)
+Output: 0.8760926489260222
 
 
 # In[ ]:
+r2 = r2_score(y_test,y_pred)
+mse = mean_squared_error(y_test,y_pred)
+rmse = np.sqrt(mse)
+print("coefficient of determination :", r2)
+print("mean squared error :", mse)
+print("root mean squared error :", rmse)
+output: coefficient of determination : 0.7979920708813732
+        mean squared error : 16063821.619120434
+        root mean squared error : 4007.9697627502674
 
 
 # As we can see, if we were tyring to improve our model's accuracy then there is a chance of overfitting.
